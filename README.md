@@ -5,6 +5,8 @@ The Quantum Maze is a classical ludo inspired maze game that allows beginners to
 ### Rules
 - We have a four-face dice. One can start the game only when we land at a four by a quatum measurement of two hadamard gates.
 - We should be in either box A or B to win the game. We put a Bloch sphere in place of A and B. And when a player reaches the nearest box, he has to rotate the Bloch sphere by using any quantum gate to land it in 0 state.
+
+### Use quantum_maze.py file to play the game!
  
 ![](https://github.com/utkarshh-singh/2022_microsoft_ionq_challenge/blob/main/Screen%20Shot%202022-01-30%20at%2011.48.06.png)
 ![](https://github.com/utkarshh-singh/2022_microsoft_ionq_challenge/blob/main/Screen%20Shot%202022-01-30%20at%2011.49.26%20(1).png)

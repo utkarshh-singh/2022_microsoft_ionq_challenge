@@ -24,7 +24,6 @@ import numpy as np
 import time
 import random
 import sys
-import site
 
 warnings.filterwarnings('ignore')
 #from azure.quantum.qiskit import AzureQuantumProvider

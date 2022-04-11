@@ -69,16 +69,7 @@ import sys
 
 
 # %%
-import time
-import random
-import sys
-from qiskit import QuantumCircuit, BasicAer, Aer, execute
-from qiskit.visualization import plot_histogram
-from qiskit.tools.monitor import job_monitor
-#from azure.quantum.qiskit import AzureQuantumProvider
-from qiskit.utils import algorithm_globals
-from qiskit.utils import QuantumInstance
-from qiskit.visualization import plot_bloch_multivector
+
 
 
 #backend = provider.get_backend("ionq.simulator")
@@ -232,12 +223,6 @@ def blc_spr(state, title="", figsize=None, *, rho=None, filename=None):
     #matplotlib_close_if_inline(fig)
     return fig
 
-    
-# a = blc_spr([1,0])
-# plt.pause(1)
-# #plt.close('all')
-# print(5)
-
 # %%
 
 
@@ -265,25 +250,6 @@ def rand_bloch(num_qbits = 1, seed = None):
     qobj = assemble(qc)  
     state = sim.run(qobj).result().get_statevector()
     return state
-
-
-
-# def blc_spr(state, title="", figsize=None, *, rho=None, reverse_bits=False, filename=None):
-
-#     # Data
-#     bloch_data = (
-#         _bloch_multivector_data(state)[::-1] if reverse_bits else _bloch_multivector_data(state)
-#     )
-#     num = len(bloch_data)
-#     width, height = plt.figaspect(1 / num)
-#     fig = plt.figure(figsize=(width, height))
-#     for i in range(num):
-#         pos = num - 1 - i if reverse_bits else i
-#         ax = fig.add_subplot(1, num, i + 1, projection="3d")
-#         plot_bloch_vector(bloch_data[i], "qubit " + str(pos), ax=ax, figsize=figsize)
-#     fig.suptitle(title, fontsize=16, y=1.01)
-#     #matplotlib_close_if_inline(fig)
-#     return fig
 
 
 
@@ -410,6 +376,3 @@ def start():
 if __name__ == "__main__":
     start()
 
-# %%
-
-# %%

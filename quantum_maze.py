@@ -411,15 +411,5 @@ if __name__ == "__main__":
     start()
 
 # %%
-from qiskit import QuantumCircuit
-from qiskit.quantum_info import Statevector
-from qiskit.visualization import plot_bloch_multivector
-%matplotlib inline
-
-qc = QuantumCircuit(1)
-qc.h(0)
-
-state = Statevector.from_instruction(qc)
-plot_bloch_multivector(state, title="New Bloch Multivector", reverse_bits=False)
 
 # %%
